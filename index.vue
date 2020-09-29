@@ -19,6 +19,11 @@ export default {
         utils.dateOfWeeHours() // cookie 过期时间 当前凌晨
       )
     }
+    
+    const str = '' // 缓存的时间
+    if (new Date(str).toDateString() !== new Date().toDateString()) {
+      // 不同代表隔天
+    }
   },
   destroyed () {}
 }
